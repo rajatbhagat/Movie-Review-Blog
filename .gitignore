@@ -2,11 +2,17 @@
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
 *$py.class
 
 # C extensions
 *.so
+
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
 
 # Distribution / packaging
 .Python
