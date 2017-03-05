@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rajat's Blog</title>
+</head>
+<body>
+    <div>
+        {% if posts %}
+        <ul>
+            {% for post in posts %}
+            <li>
+                <strong>{{post.title}}</strong>s
+                <p>Written By: {{post.author}}</p>
+                <p>Date: {{post.published_date}}</p>
+                <p>Rating: {{post.rating}}</p>
+                <p>{{post.content}}</p><br>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
